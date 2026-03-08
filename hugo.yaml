@@ -1,0 +1,4 @@
+baseURL: "https://rdcox.fyi/"
+languageCode: "en-us"
+title: "rdcox.fyi"
+paginate: 10
