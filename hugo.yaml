@@ -2,3 +2,60 @@ baseURL: "https://rdcox.fyi/"
 languageCode: "en-us"
 title: "rdcox.fyi"
 paginate: 10
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: "rdcox.fyi"
+  description: "Thoughts and work by rdcox"
+  author: "rdcox"
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  comments: false
+
+  homeInfoParams:
+    Title: "rdcox.fyi"
+    Content: "Thoughts and work."
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/rdcox"
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+
+markup:
+  highlight:
+    noClasses: false
+
+pygmentsUseClasses: true
